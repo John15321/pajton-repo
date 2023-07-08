@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/John15321/pajton-repo/compare/v1.1.0...v1.2.0) (2023-07-08)
+
+
+### Features
+
+* **kill me:** Try to fix again ([90ad917](https://github.com/John15321/pajton-repo/commit/90ad917168c55dd53cce6f66ce05f0eb7a0f8ed2))
+
 # [1.1.0](https://github.com/John15321/pajton-repo/compare/v1.0.0...v1.1.0) (2023-07-08)
 
 
