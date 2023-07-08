@@ -1,7 +1,7 @@
 
 name: 📦 Package
 on:
-    push:
+    pull_request:
 
 jobs:
     package:

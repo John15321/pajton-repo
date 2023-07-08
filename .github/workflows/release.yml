@@ -5,6 +5,9 @@ name: 🚀 Release
 
 on:
   push:
+    branches:
+      - main
+      - master
 
 permissions:
   contents: write
@@ -28,6 +31,7 @@ jobs:
       - name: Install Poetry
         run: pip install poetry
       - name: Semantic Release
+# The semantic release also runs 'poetry build' this is configured in the config.js file
         run: |
           npm -g install @semantic-release/git semantic-release semantic-release-github-actions-tags @semantic-release/changelog @semantic-release/github @semantic-release/exec
           npx semantic-release

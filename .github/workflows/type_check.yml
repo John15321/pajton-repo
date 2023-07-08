@@ -1,7 +1,7 @@
 
 name: 🏗️ Static Type Checking
 on:
-    push:
+    pull_request:
 
 jobs:
     test:
