@@ -26,9 +26,9 @@ jobs:
         with:
             python-version: "3.9" # Should be lowest version supported
       - name: Build package
-          run: |
-            pip install poetry
-            poetry build
+        run: |
+          pip install poetry
+          poetry build
 #      - name: Here you can add your publishing command
 #        run: poetry publish
       - name: Semantic Release
