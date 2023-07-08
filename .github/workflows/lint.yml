@@ -1,0 +1,24 @@
+
+name: 🖋 Check linting
+on:
+    push:
+
+jobs:
+    lint:
+        strategy:
+            matrix:
+                python-version: ["3.11"] # Should be the newest version supported
+        name: 🖋 Check linting
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository code
+              uses: actions/checkout@v2
+            - name: Install Python ${{ matrix.python-version }}
+              uses: actions/setup-python@v4
+              with:
+                  python-version: "${{ matrix.python-version }}"
+            - name: Check linting
+              run: |
+                  pip install tox poetry
+                  tox -e lint
+
