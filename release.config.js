@@ -13,6 +13,12 @@ const config = {
         }
       ],
       [
+        "@semantic-release/exec",
+        {
+          "verifyReleaseCmd": "echo ${nextRelease.version} > .VERSION"
+        }
+      ],
+      [
         "@semantic-release/changelog",
         {
           "changelogFile": "CHANGELOG.md"
