@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/John15321/pajton-repo/compare/v1.2.0...v1.2.1) (2023-07-08)
+
+
+### Bug Fixes
+
+* **MINOR:** Some CI fixes ([57817d3](https://github.com/John15321/pajton-repo/commit/57817d3e51c2a2d80b98b57ae5e22bb2173f73db))
+
 # [1.2.0](https://github.com/John15321/pajton-repo/compare/v1.1.0...v1.2.0) (2023-07-08)
 
 
