@@ -7,7 +7,7 @@ jobs:
     test:
         strategy:
             matrix:
-                os: [ubuntu-latest, windows-latest, macos-latest]
+                os: [ubuntu-latest]
                 python-version: ["3.9"] # Should be the lowest supported version
         name: 🏗️ Run Static Type Checking
         runs-on: ${{ matrix.os }}
