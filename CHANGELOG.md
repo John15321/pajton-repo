@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/John15321/pajton-repo/compare/v1.2.1...v1.3.0) (2023-07-08)
+
+
+### Features
+
+* **MINOR:** Add a lol function ([#1](https://github.com/John15321/pajton-repo/issues/1)) ([9c55f28](https://github.com/John15321/pajton-repo/commit/9c55f282cbfff2023ebed49edc3f3b506c4d02f6))
+
 ## [1.2.1](https://github.com/John15321/pajton-repo/compare/v1.2.0...v1.2.1) (2023-07-08)
 
 
