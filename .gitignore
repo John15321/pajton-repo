@@ -174,3 +174,8 @@ compose-dev.yaml
 
 # Ignore jupyter notebooks
 *.ipynb
+
+# NPM/Node stuff
+node_modules/
+package-lock.json
+package.json

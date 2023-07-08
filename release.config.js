@@ -1,21 +1,21 @@
 const config = {
     branches: ['main', 'master'],
-  
+
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/exec",
+        {
+          "prepareCmd": "echo ${nextRelease.version} > .VERSION ; poetry version $(cat .VERSION | sed 's/^[a-zA-Z]*//') ; poetry build"
+        }
+      ],
       [
         "@semantic-release/github",
         {
           "assets": [
             { "path": "dist/*" },
           ]
-        }
-      ],
-      [
-        "@semantic-release/exec",
-        {
-          "verifyReleaseCmd": "echo ${nextRelease.version} > .VERSION"
         }
       ],
       [
@@ -29,10 +29,8 @@ const config = {
         {
           "assets": ["CHANGELOG.md"],
           "message": "chore(release 🚀): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
-  
         }
       ]
     ],
   };
   module.exports = config;
-  
