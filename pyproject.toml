@@ -3,7 +3,7 @@ name = "pajton-repo"
 # Do not touch the version
 # Is is edited dynamically by the CI job
 # It should remain as 0.0.0
-version = "0.0.0"
+version = "1.4.0"
 description = "Prints out Hello World!"
 authors = ["Jan Bronicki <janbronicki@gmail.com>",]
 readme = "README.md"

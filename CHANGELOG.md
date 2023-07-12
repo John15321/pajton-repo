@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/John15321/pajton-repo/compare/v1.3.0...v1.4.0) (2023-07-12)
+
+
+### Features
+
+* **Lol:** Try also changing the pyproject.toml ([c87de9d](https://github.com/John15321/pajton-repo/commit/c87de9d77e4a71cb4562f6cef637f9b600147909))
+
 # [1.3.0](https://github.com/John15321/pajton-repo/compare/v1.2.1...v1.3.0) (2023-07-08)
 
 
