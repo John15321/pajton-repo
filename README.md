@@ -1,7 +1,7 @@
 [![semantic-release](https://img.shields.io/badge/semantic--release-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 
 
-# Pajton Repo
+# Pajton Repository
 
 Prints out Hello World!
 
