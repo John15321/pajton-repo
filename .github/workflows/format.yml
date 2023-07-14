@@ -31,7 +31,7 @@ jobs:
                   pip install tox poetry
                   tox -e check_format
             - name: Save dependencies
-              id: cache-primes-save
+              id: tox-save
               uses: actions/cache/save@v3
               with:
                 path: |
