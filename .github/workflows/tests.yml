@@ -20,8 +20,22 @@ jobs:
               with:
                   python-version: "${{ matrix.python-version }}"
                   cache: "pip"
+            - name: Restore dependencies
+              id: tox
+              uses: actions/cache/restore@v3
+              with:
+                path: |
+                  .tox
+                key: ${{ runner.os }}-${{ matrix.python-version }}-tox
             - name: Run tests
               run: |
                   pip install tox poetry
                   tox -e cov
+            - name: Save dependencies
+              id: cache-primes-save
+              uses: actions/cache/save@v3
+              with:
+                path: |
+                  .tox
+                key: ${{ runner.os }}-${{ matrix.python-version }}-tox
 
