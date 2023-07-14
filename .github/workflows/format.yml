@@ -25,7 +25,7 @@ jobs:
               with:
                 path: |
                   .tox
-                key: ${{ runner.os }}-${{ matrix.python-version }}-tox
+                key: ${{ runner.os }}-${{ matrix.python-version }}-tox-format
             - name: Check formatting
               run: |
                   pip install tox poetry
@@ -36,5 +36,5 @@ jobs:
               with:
                 path: |
                   .tox
-                key: ${{ runner.os }}-${{ matrix.python-version }}-tox
+                key: ${{ runner.os }}-${{ matrix.python-version }}-tox-format
 

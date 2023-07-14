@@ -26,7 +26,7 @@ jobs:
               with:
                 path: |
                   .tox
-                key: ${{ runner.os }}-${{ matrix.python-version }}-tox
+                key: ${{ runner.os }}-${{ matrix.python-version }}-tox-typecheck
             - name: Run Static Type Checking
               run: |
                   pip install tox poetry
@@ -37,4 +37,4 @@ jobs:
               with:
                 path: |
                   .tox
-                key: ${{ runner.os }}-${{ matrix.python-version }}-tox
+                key: ${{ runner.os }}-${{ matrix.python-version }}-tox-typecheck

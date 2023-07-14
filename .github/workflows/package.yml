@@ -26,7 +26,7 @@ jobs:
               with:
                 path: |
                   .tox
-                key: ${{ runner.os }}-${{ matrix.python-version }}-tox
+                key: ${{ runner.os }}-${{ matrix.python-version }}-tox-package
             - name: Check package build
               run: |
                   pip install tox poetry
@@ -37,4 +37,4 @@ jobs:
               with:
                 path: |
                   .tox
-                key: ${{ runner.os }}-${{ matrix.python-version }}-tox
+                key: ${{ runner.os }}-${{ matrix.python-version }}-tox-package
