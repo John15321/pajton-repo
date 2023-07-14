@@ -19,9 +19,15 @@ jobs:
               id: cache
               with:
                   python-version: "${{ matrix.python-version }}"
-                  cache: "pip"
+                  cache: "pip"       
+            - name: Restore cached Primes
+              id: tox
+              uses: actions/cache/restore@v3
+              with:
+                path: |
+                  .tox
+                key: ${{ runner.os }}-{{ matrix.python-version }}-tox            
             - name: Check installation procedure
               run: |
                   pip install tox poetry
                   tox -e install
-
