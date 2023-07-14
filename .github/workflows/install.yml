@@ -37,4 +37,4 @@ jobs:
               with:
                 path: |
                   .tox
-                key: ${{ steps.cache-primes-restore.outputs.cache-primary-key }}
+                key: ${{ runner.os }}-${{ matrix.python-version }}-tox
