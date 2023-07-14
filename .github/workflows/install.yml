@@ -20,14 +20,21 @@ jobs:
               with:
                   python-version: "${{ matrix.python-version }}"
                   cache: "pip"       
-            - name: Restore cached Primes
+            - name: Restore dependencies
               id: tox
               uses: actions/cache/restore@v3
               with:
                 path: |
                   .tox
-                key: ${{ runner.os }}-${{ matrix.python-version }}-tox            
+                key: ${{ runner.os }}-${{ matrix.python-version }}-tox
             - name: Check installation procedure
               run: |
                   pip install tox poetry
                   tox -e install
+            - name: Save dependencies
+              id: cache-primes-save
+              uses: actions/cache/save@v3
+              with:
+                path: |
+                  .tox
+                key: ${{ steps.cache-primes-restore.outputs.cache-primary-key }}
